@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import GameDetailsPage from "./games/[id]/GameDetailsPage";
+import GameDetailsPage from "./pages/GameDetailsPage";
 import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage";
 import Layout from "./pages/Layout";
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "games/:id",
+        path: "games/:slug",
         element: <GameDetailsPage />,
       },
     ],
